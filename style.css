@@ -1,0 +1,23 @@
+@font-face {
+    font-family: 'Fype';
+    src: url('asset/fype.otf');
+}
+body {
+    background-image: url('asset/bg-img.png');
+    background-size: cover;
+    background-repeat: none;
+    font-family: 'Fype';
+    color: rgb(73, 104, 191);
+    text-align: center;
+}
+
+.section{
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+}
+
+#time {
+    font-size: 90px;
+}
