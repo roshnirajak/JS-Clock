@@ -12,6 +12,6 @@ function clock() {
     else {
         meridiem="PM";
     }
-    document.getElementById('time').innerHTML = `${hrs} : ${min} : ${sec} : ${meridiem}`;
+    document.getElementById('time').innerHTML = `${hrs}: ${min}: ${sec}: ${meridiem}`;
 }
 setInterval(clock, 10)
