@@ -1,20 +1,17 @@
 function clock() {
-    let time = new Date();
+    let date = new Date();
 
-    let hrs = time.getHours();
-    let min = time.getMinutes();
-    let sec = time.getSeconds();
-    let meridiem = document.getElementById('mer');
-
-    document.getElementById('hrs').innerHTML = hrs;
-    document.getElementById('min').innerHTML = min;
-    document.getElementById('sec').innerHTML = sec;
+    let hrs = date.getHours();
+    let min = date.getMinutes();
+    let sec = date.getSeconds();
+    let meridiem = "";
 
     if (hrs <= 12) {
-        meridiem.innerHTML = "AM";
+        meridiem= "AM";
     }
     else {
-        meridiem.innerHTML = "PM";
+        meridiem="PM";
     }
+    document.getElementById('time').innerHTML = `${hrs} : ${min} : ${sec} : ${meridiem}`;
 }
 setInterval(clock, 10)
