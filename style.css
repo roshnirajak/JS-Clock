@@ -4,8 +4,9 @@
 }
 body {
     background-image: url('asset/bg-img.png');
+    height: 100vh;
     background-size: cover;
-    background-repeat: none;
+    background-position: center;
     font-family: 'Fype';
     color: rgb(73, 104, 191);
     text-align: center;
